@@ -4,14 +4,15 @@
 	import HeroImageResource from '$lib/images/joshua-sortino-f3uWi9G-lus-unsplash.jpg';
 	import Image1 from '$lib/images/joshua-sortino-gii7lF4y0WY-unsplash.jpg';
 	import Image2 from '$lib/images/joshua-sortino-xZqr8WtYEJ0-unsplash.jpg';
+	import IntersectionObserverImage from '../../lib/components/IntersectionObserverImage.svelte';
 	import ScrollDown from '../../lib/components/ScrollDown.svelte';
 </script>
 
 <ScrollDown />
-<Hero style="margin-bottom: 200vh">
-	<img src={HeroImageResource} alt="Hero" width="1920" height="1281" />
+<Hero style="margin-bottom: 120px">
+	<img src={HeroImageResource} alt="Hero" width="2035" height="1357" />
 </Hero>
-<TwoColumns style="margin-bottom: 200vh">
+<TwoColumns style="margin-bottom: 120px">
 	<div slot="column-1">
 		<h1>Sorry, checking all the water in this area; there's an escaped fish.</h1>
 		<p>
@@ -32,12 +33,12 @@
 		</p>
 	</div>
 	<div slot="column-2">
-		<img src={Image1} alt="Column" width="1251" height="835" loading="lazy" decoding="async" />
+		<IntersectionObserverImage src={Image1} alt="Column" width="997" height="665" />
 	</div>
 </TwoColumns>
 <TwoColumns>
 	<div slot="column-1">
-		<img src={Image2} alt="Column" width="1251" height="835" loading="lazy" decoding="async" />
+		<IntersectionObserverImage src={Image2} alt="Column" width="997" height="665" />
 	</div>
 	<div slot="column-2">
 		<h1>

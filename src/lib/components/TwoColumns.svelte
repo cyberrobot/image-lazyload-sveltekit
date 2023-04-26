@@ -1,8 +1,8 @@
 <script>
-	import ScrollDown from './ScrollDown.svelte';
+	export let style;
 </script>
 
-<div class="column-container">
+<div class="column-container" {style}>
 	<div class="column">
 		<slot name="column-1" />
 	</div>
@@ -16,7 +16,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		margin: 0 auto 200vh;
+		margin: 0 auto;
 		max-width: 80%;
 		gap: 40px;
 	}
