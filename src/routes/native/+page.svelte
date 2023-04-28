@@ -1,7 +1,7 @@
 <script>
 	import Hero from '$lib/components/Hero.svelte';
 	import TwoColumns from '$lib/components/TwoColumns.svelte';
-	import HeroImageResource from '$lib/images/joshua-sortino-f3uWi9G-lus-unsplash.jpg';
+	import HeroImage from '$lib/images/joshua-sortino-f3uWi9G-lus-unsplash.jpg';
 	import Image1 from '$lib/images/joshua-sortino-gii7lF4y0WY-unsplash.jpg';
 	import Image2 from '$lib/images/joshua-sortino-xZqr8WtYEJ0-unsplash.jpg';
 	import ScrollDown from '../../lib/components/ScrollDown.svelte';
@@ -9,7 +9,7 @@
 
 <ScrollDown />
 <Hero style="margin-bottom: 200vh">
-	<img src={HeroImageResource} alt="Hero" width="1920" height="1281" />
+	<img src={HeroImage} alt="Hero" width="1920" height="1281" />
 </Hero>
 <TwoColumns style="margin-bottom: 200vh">
 	<div slot="column-1">
